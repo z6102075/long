@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>拉勾网-专业的互联网招聘平台_找工作_招聘_人才网_求职</title> 
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<style>
+
+#abc{
+    min-width: 100%;
+    height: 30px;
+    background-color: #333;
+    left: 0px;
+    top:0px;
+    position: absolute;
+
+}
+#dier{
+    min-width: 100%;
+    height: 70px;
+    background-color: rgb(250, 250, 250);
+    left: 0px;
+    top:3%;
+    position: absolute;
+
+}
+#dier2{
+    min-width: 100%;
+    height: 140px;
+    background-color: rgb(242, 245, 244);
+    left: 0px;
+    top:10%;
+    position: absolute;
+
+}
+#dier2 p{
+    font-size: 14px;
+    float: left;
+    top: 90px;
+    left: 460px;
+    opacity: 0.6;
+    position: relative;
+}#dier2 a{
+    display:block;
+    margin:8px;
+    font-size: 14px;
+    float: left;
+    top:97px;
+    left: 470px;
+    color: rgb(0,179,138);
+    text-decoration: none;
+    z-index:1;
+    position: relative;
+}
+#lagou{
+    color: rgb(119, 233, 185);
+    text-decoration: none;
+    float: left;
+    line-height: 15px;
+    padding: 0 12px;
+    margin: 7px 0 0;
+    text-decoration: none;
+
+}
+#qiye{
+    color: #c4c4c4 ;
+    text-decoration: none;
+    border-left: 1px solid #5d5d5d;
+    float: left;
+    line-height: 15px;
+    padding: 0 12px;
+    margin: 7px 0 0;
+    text-decoration: none;
+
+}
+#denglu{
+    border-left: 1px solid #5d5d5d;
+    color: #c4c3c3;
+    float: right;
+    line-height: 15px;
+    padding: 0 12px;
+    margin: 7px 0 0;
+    text-decoration: none;
+}
+#zhuce{
+    color: #c4c3c3;
+    float: right;
+    line-height: 15px;
+    padding: 0 12px;
+    margin: 7px 0 0;
+    text-decoration: none;
+    
+}
+
+.xuanxiang {
+    line-height: 15px;
+    margin:0px;
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    font-weight:0px;
+    font: left;
+    top: 6.5%;
+    left:27%;
+    position: absolute;
+    
+}
+.xuanxiang a{
+ color: #333;
+    width:100px;
+     margin:15px;
+    text-decoration: none;
+}
+.div1 img{
+    top: 3.5%;
+    left:2%;
+   width: 100px;
+   height: 56px;
+   position: absolute;
+   
+}
+#buju{
+    width: 1333px;
+   height: 888px;
+  left:284px;
+  top: 0px;
+  position: absolute;
+  
+}
+.quanguo a{
+    color: #333;
+    font-size: 20px;
+    font-weight:0px;
+    top: 6%;
+    left:10%;
+    text-decoration: none;
+    position: absolute;
+}
+.qiehuan a{
+    color: #333;
+    font-size: 10px;
+    font-weight:0px;
+    top: 7%;
+    left:17%;
+    text-decoration: none;
+    position: absolute;
+}
+#box{
+        width: 60px;
+        margin: 32px auto;
+        height: 50px;
+        top: 9%;
+         left:28%;
+        font-family: 'Microsoft YaHei';
+        font-size: 14px;
+        position: absolute;
+    }
+    input{
+        width: 800px;
+        border: 1px solid rgb(0,179,138);
+        height: 50px;
+        top: 17%;
+        left:-100%;
+        background-image: url(images/search.jpg);
+        background-repeat: no-repeat;
+        background-size: 0px;
+        background-position:0px center;
+        outline:medium;
+        font-size:18px;
+        padding:0 0 0 13px;
+        position: absolute;
+    }
+    
+    #search{
+        width: 150px;
+        height: 52px;
+        top: 17%;
+         left:1200%;
+         font-size:20px;
+        float: right;
+        background: rgb(0,179,138);
+        color: white;
+        text-align: center;
+        line-height: 50px;
+        cursor: pointer;
+        position: absolute;
+    }
+/* 以下是菜单栏 */
+
+    .wrap{
+position: absolute;
+width:300px;
+left: 300px;
+top:250px;
+}
+.wrap span{
+
+}
+ul{
+    padding: 15px 0;
+    margin: 9;
+    list-style: none;
+    border-right-width: 0;
+
+}
+li {
+    height: 50px;
+    line-height: 30px;
+    padding-left: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    opacity: 0.6;
+}
+
+
+li.active{
+    background: rgb(247,247,247);
+    box-shadow: 2px 0 5px rgba(0,0,0,.3);
+}
+li span:hover{
+    margin: 1px;
+    color:rgb(0,197,138);
+}
+.none{
+    display: none;
+}
+#sub{
+    width: 600px;
+    position: absolute;
+    border: 1px solid #f7f7f7;
+    background-color: #f7f7f7;
+    box-shadow: 2px 0 5px rgba(0,0,0,.3);
+    left: 300px;
+    top:30px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px;
+    z-index:1;
+}
+.sub_content a{
+    font-size: 12px;
+    color: #666;
+    text-decoration: none;
+}
+.sub_content dd a {
+    border-left: 1px solid #e0e0e0;
+    padding: 0 10px;
+    margin: 4px 0 ;
+}
+.sub_content dl{
+    overflow:hidden;
+}
+.sub_content dt {
+    float: left;
+    width: 70px;
+    font-weight: bold;
+    clear:left;
+    position: relative;
+}
+.sub_content dd{
+    float: left;
+    margin-left: 5px;
+    border-top:1px solid #eee;
+    margin-bottom: 5px;
+}
+.sub_content dt i{
+    width: 4px;
+    height: 14px;
+    font: 400 9p/14px consolas;
+    position:absolute;
+    right: 5px;
+    top:5px;
+}
+/* 下面是轮播图插入 */
+#lb{
+    float: left;
+    left: 570px;
+    top:25%;
+    position: absolute;
+}
+</style>
+ 
+<script>
+ 
+ document.domain = "caibaojian.com";
+function setIframeHeight(iframe) {
+if (iframe) {
+var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
+if (iframeWin.document.body) {
+iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;
+}
+}
+};
+
+window.onload = function () {
+setIframeHeight(document.getElementById('external-frame'));
+};
+</script>
+ <script src="jquery-3.3.1.min.js"></script>
+ <script src="function.js"></script>
+ <script src="2.js"></script>
+</head>
+ 
+<body>
+    <div id="abc">
+
+    </div>
+    <div id="dier"></div>
+    <div id="dier2"><p>热门搜索: </p><a href="#">Java</a>&nbsp;&nbsp;<a href="#">后端开发</a>&nbsp;&nbsp;<a href="#">移动产品经理</a>&nbsp;&nbsp;<a href="#">数据开发</a></div>
+    <div id="buju"> 
+	<div id="lg_tbar">
+        <div class="inner">
+            <span class="lg_tbar_l">
+                <a id="lagou" href="" >📱拉钩APP</a>
+                <a id="qiye" href="" >进入企业版</a>
+                <a id="denglu" href="" >登录</a>
+                <a id="zhuce" href="" >注册</a>
+            </span>
+            </div>
+        </div>
+    <div id="xiangmu">
+            <div class="div1 img">  
+          <img src="lg/3.jpg" alt="">
+        <span class="quanguo"> 
+          <a href="" >全国站</a>
+        </span>
+        <span class="qiehuan">
+                <a href="" >[切换城市]</a>
+        </span>
+          
+          <div class="xuanxiang" > 
+                   <a href="" >首页</a>
+                   <a href="" >公司</a>
+                   <a href="" >校园</a>
+                   <a  href="" >言职</a></div>
+        </div>
+ 
+             </div>
+            </div>
+     
+            <div id="box">
+                    <input type="text" name="search" placeholder="搜索职位、公司或地点">
+                    <div id="search">搜索</div> 
+                </div>
+
+                <div class="wrap" id="test">
+                    <ul>
+                        <li data-id="a">
+                        <span style="font-size: 20px;"><b>技术</b></span>&nbsp;&nbsp;&nbsp;<span>Java</span>&nbsp;&nbsp;&nbsp;<span>PHP</span>&nbsp;&nbsp;&nbsp;<span>C++</span>&nbsp;&nbsp;<span>区域链</span>
+                        </li>
+                        <li data-id="b">
+                            <span style="font-size: 20px"><b>产品</b></span>&nbsp;&nbsp;&nbsp;<span>产品总监</span>&nbsp;&nbsp;<span>产品经理</span>
+                        </li>
+                        <li data-id="c">
+                            <span style="font-size: 20px"><b>设计</b></span>&nbsp;&nbsp;&nbsp;<span>UI设计师</span>&nbsp;&nbsp;<span>交互设计</span>&nbsp;&nbsp;<span>网页设计师</span>
+                        </li>    <li data-id="d">
+                            <span style="font-size: 20px"><b>运营</b></span>&nbsp;&nbsp;&nbsp;<span>新媒体运营</span>&nbsp;&nbsp;&nbsp;<span>编辑</span>&nbsp;&nbsp;<span>数据运营</span>
+                        </li> 
+                           <li data-id="e">
+                            <span style="font-size: 20px"><b>市场</b></span>&nbsp;&nbsp;&nbsp;<span>市场营销</span>&nbsp;&nbsp;&nbsp;<span>市场推广</span>&nbsp;&nbsp;<span>市场策划</span>
+                        </li>   
+                         <li data-id="f">
+                            <span style="font-size: 20px"><b>销售</b></span>&nbsp;&nbsp;&nbsp;<span>销售专员</span>&nbsp;&nbsp;&nbsp;<span>销售经理</span>&nbsp;&nbsp;<span>销售总监</span>
+                        </li> 
+                           <li data-id="g">
+                            <span style="font-size: 20px"><b>职能</b></span>&nbsp;&nbsp;&nbsp;<span>HR</span>&nbsp;&nbsp;&nbsp;<span>行政</span>&nbsp;&nbsp;&nbsp;<span>财务</span>&nbsp;&nbsp;&nbsp;<span>审计</span>
+                        </li>   
+                         <li data-id="h">
+                            <span style="font-size: 20px"><b>教育</b></span>&nbsp;&nbsp;&nbsp;<span>小游戏开发</span>&nbsp;&nbsp;&nbsp;<span>U3D</span>&nbsp;&nbsp;&nbsp;<span>游戏策划</span>
+                        </li> 
+                        <li data-id="i">
+                                <span style="font-size: 20px"><b>物流</b></span>&nbsp;&nbsp;&nbsp;<span>小游戏开发</span>&nbsp;&nbsp;&nbsp;<span>U3D</span>&nbsp;&nbsp;&nbsp;<span>游戏策划</span>
+                            </li>
+                            <li data-id="j">
+                                    <span style="font-size: 20px"><b>餐饮</b></span>&nbsp;&nbsp;&nbsp;<span>小游戏开发</span>&nbsp;&nbsp;&nbsp;<span>U3D</span>&nbsp;&nbsp;&nbsp;<span>游戏策划</span>
+                                </li>
+                                <li data-id="k">
+                                        <span style="font-size: 20px"><b>服务</b></span>&nbsp;&nbsp;&nbsp;<span>小游戏开发</span>&nbsp;&nbsp;&nbsp;<span>U3D</span>&nbsp;&nbsp;&nbsp;<span>游戏策划</span>
+                                    </li>  
+  
+
+                    </ul>
+                    <div id="sub" class="none">
+                        <div id="a" class="sub_content none">
+                            <dl>
+                                <dt>
+                                    <a href="#">后端开发<i>&gt;</i></a>
+                                </dt>
+                            </dl>
+                            <dl>
+                                <dd>
+                                        <a href="#">Java</a>
+                                    <a href="#">PHP</a>
+                                    <a href="#">C++</a>
+                                    <a href="#">C++</a>
+                                    <a href="#">C++</a>
+                                    <a href="#">C++</a>
+                                    <a href="#">C++</a>
+                                    <a href="#">C++</a>
+                                    <a href="#">C++</a>
+                                    <a href="#">C++</a>
+                                    <a href="#">C++</a>
+                                    <a href="#">C++</a>
+                                    <a href="#">C++</a>
+                                    <a href="#">C++</a>
+                                    <a href="#">C++</a>
+                                    <a href="#">C++</a>
+                                    <a href="#">C++</a>
+                                    <a href="#">C++</a>
+                                    <a href="#">C++</a>
+
+                                </dd>
+                            </dl>
+                            </div>
+                                <div id="b" class="sub_content none">
+                                                            <dl>
+                                <dt>
+                                    <a href="#">产品<i>&gt;</i></a>
+                                </dt>
+                            </dl>
+                            <dl>
+                                <dd>
+                                        <a href="#">Java</a>
+                                    <a href="#">PHP</a>
+                                    <a href="#">C++</a>
+                                    <a href="#">C++</a>
+                                    <a href="#">C++</a>
+                                    <a href="#">C++</a>
+                                    <a href="#">C++</a>
+                                    <a href="#">C++</a>
+                                    <a href="#">C++</a>
+                                    <a href="#">C++</a>
+                                    <a href="#">C++</a>
+                                    <a href="#">C++</a>
+                                    <a href="#">C++</a>
+                                    <a href="#">C++</a>
+                                    <a href="#">C++</a>
+                                    <a href="#">C++</a>
+                                    <a href="#">C++</a>
+                                    <a href="#">C++</a>
+                                    <a href="#">C++</a>
+                                    
+                                </dd>
+                            </dl>
+                                </div>
+                                <div id="c" class="sub_content none">
+                                        <dl>
+            <dt>
+                <a href="#">设计<i>&gt;</i></a>
+            </dt>
+        </dl>
+        <dl>
+            <dd>
+                    <a href="#">Java</a>
+                <a href="#">PHP</a>
+                <a href="#">C++</a>
+                <a href="#">C++</a>
+                <a href="#">C++</a>
+                <a href="#">C++</a>
+                <a href="#">C++</a>
+                <a href="#">C++</a>
+                <a href="#">C++</a>
+                <a href="#">C++</a>
+                <a href="#">C++</a>
+                <a href="#">C++</a>
+                <a href="#">C++</a>
+                <a href="#">C++</a>
+                <a href="#">C++</a>
+                <a href="#">C++</a>
+                <a href="#">C++</a>
+                <a href="#">C++</a>
+                <a href="#">C++</a>
+                
+            </dd>
+        </dl>
+            </div>
+            <div id="d" class="sub_content none">
+                    <dl>
+<dt>
+<a href="#">运营<i>&gt;</i></a>
+</dt>
+</dl>
+<dl>
+<dd>
+<a href="#">Java</a>
+<a href="#">PHP</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+
+</dd>
+</dl>
+</div>
+<div id="e" class="sub_content none">
+        <dl>
+<dt>
+<a href="#">市场<i>&gt;</i></a>
+</dt>
+</dl>
+<dl>
+<dd>
+<a href="#">Java</a>
+<a href="#">PHP</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+
+</dd>
+</dl>
+</div>
+<div id="f" class="sub_content none">
+        <dl>
+<dt>
+<a href="#">销售<i>&gt;</i></a>
+</dt>
+</dl>
+<dl>
+<dd>
+<a href="#">Java</a>
+<a href="#">PHP</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+
+</dd>
+</dl>
+</div>
+<div id="g" class="sub_content none">
+        <dl>
+<dt>
+<a href="#">职能<i>&gt;</i></a>
+</dt>
+</dl>
+<dl>
+<dd>
+<a href="#">Java</a>
+<a href="#">PHP</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+
+</dd>
+</dl>
+</div>
+<div id="h" class="sub_content none">
+        <dl>
+<dt>
+<a href="#">游戏<i>&gt;</i></a>
+</dt>
+</dl>
+<dl>
+<dd>
+<a href="#">Java</a>
+<a href="#">PHP</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+<a href="#">C++</a>
+
+</dd>
+</dl>
+</div>
+
+                                
+                        </div>
+                    </div>	
+<div id="lb">
+        <iframe src="lunbotu.html" frameborder="0" width="1100px" height="620px"></iframe>
+</div>
+
+             
+</body>
+</html>
+ 
