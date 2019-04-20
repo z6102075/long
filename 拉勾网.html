@@ -8,7 +8,9 @@
 <meta name="keywords" content="">
 <link href="" rel="stylesheet">
 <style>
-
+*{
+    
+}
 #abc{
     min-width: 100%;
     height: 30px;
@@ -63,6 +65,7 @@
     padding: 0 12px;
     margin: 7px 0 0;
     text-decoration: none;
+    position:absolute;
 
 }
 #qiye{
@@ -74,7 +77,8 @@
     padding: 0 12px;
     margin: 7px 0 0;
     text-decoration: none;
-
+    left: 100px;
+    position:absolute;
 }
 #denglu{
     border-left: 1px solid #5d5d5d;
@@ -84,6 +88,9 @@
     padding: 0 12px;
     margin: 7px 0 0;
     text-decoration: none;
+    right: 0px;
+    position:absolute;
+    
 }
 #zhuce{
     color: #c4c3c3;
@@ -92,6 +99,8 @@
     padding: 0 12px;
     margin: 7px 0 0;
     text-decoration: none;
+    right: 50px;
+    position:absolute;
     
 }
 
@@ -196,9 +205,12 @@ width:300px;
 left: 300px;
 top:250px;
 }
-.wrap span{
+li span{
 
+    margin:top right bottom left;
+    margin:0px 4px 0px 4px;
 }
+
 ul{
     padding: 15px 0;
     margin: 9;
@@ -215,26 +227,30 @@ li {
     position: relative;
     opacity: 0.6;
 }
-
+ 
 
 li.active{
     background: rgb(247,247,247);
     box-shadow: 2px 0 5px rgba(0,0,0,.3);
+    z-index:2;
+  
 }
 li span:hover{
     margin: 1px;
     color:rgb(0,197,138);
+    
 }
 .none{
     display: none;
 }
 #sub{
     width: 600px;
+    height: 551px;
     position: absolute;
     border: 1px solid #f7f7f7;
     background-color: #f7f7f7;
     box-shadow: 2px 0 5px rgba(0,0,0,.3);
-    left: 300px;
+    left: 301px;
     top:30px;
     box-sizing: border-box;
     margin: 0;
@@ -282,23 +298,22 @@ li span:hover{
     top:25%;
     position: absolute;
 }
+#frameContentLeft
+        {
+            position: absolute;
+            top: 90%;
+            left: 15%;
+            height: 100%;
+            width: 80%;
+            overflow: hidden;
+            vertical-align: top;
+            border:none;
+        }
 </style>
  
 <script>
  
- document.domain = "caibaojian.com";
-function setIframeHeight(iframe) {
-if (iframe) {
-var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
-if (iframeWin.document.body) {
-iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;
-}
-}
-};
-
-window.onload = function () {
-setIframeHeight(document.getElementById('external-frame'));
-};
+ 
 </script>
  <script src="jquery-3.3.1.min.js"></script>
  <script src="function.js"></script>
@@ -349,38 +364,38 @@ setIframeHeight(document.getElementById('external-frame'));
 
                 <div class="wrap" id="test">
                     <ul>
-                        <li data-id="a">
-                        <span style="font-size: 20px;"><b>技术</b></span>&nbsp;&nbsp;&nbsp;<span>Java</span>&nbsp;&nbsp;&nbsp;<span>PHP</span>&nbsp;&nbsp;&nbsp;<span>C++</span>&nbsp;&nbsp;<span>区域链</span>
-                        </li>
-                        <li data-id="b">
-                            <span style="font-size: 20px"><b>产品</b></span>&nbsp;&nbsp;&nbsp;<span>产品总监</span>&nbsp;&nbsp;<span>产品经理</span>
-                        </li>
-                        <li data-id="c">
-                            <span style="font-size: 20px"><b>设计</b></span>&nbsp;&nbsp;&nbsp;<span>UI设计师</span>&nbsp;&nbsp;<span>交互设计</span>&nbsp;&nbsp;<span>网页设计师</span>
-                        </li>    <li data-id="d">
-                            <span style="font-size: 20px"><b>运营</b></span>&nbsp;&nbsp;&nbsp;<span>新媒体运营</span>&nbsp;&nbsp;&nbsp;<span>编辑</span>&nbsp;&nbsp;<span>数据运营</span>
-                        </li> 
-                           <li data-id="e">
-                            <span style="font-size: 20px"><b>市场</b></span>&nbsp;&nbsp;&nbsp;<span>市场营销</span>&nbsp;&nbsp;&nbsp;<span>市场推广</span>&nbsp;&nbsp;<span>市场策划</span>
-                        </li>   
-                         <li data-id="f">
-                            <span style="font-size: 20px"><b>销售</b></span>&nbsp;&nbsp;&nbsp;<span>销售专员</span>&nbsp;&nbsp;&nbsp;<span>销售经理</span>&nbsp;&nbsp;<span>销售总监</span>
-                        </li> 
-                           <li data-id="g">
-                            <span style="font-size: 20px"><b>职能</b></span>&nbsp;&nbsp;&nbsp;<span>HR</span>&nbsp;&nbsp;&nbsp;<span>行政</span>&nbsp;&nbsp;&nbsp;<span>财务</span>&nbsp;&nbsp;&nbsp;<span>审计</span>
-                        </li>   
-                         <li data-id="h">
-                            <span style="font-size: 20px"><b>教育</b></span>&nbsp;&nbsp;&nbsp;<span>小游戏开发</span>&nbsp;&nbsp;&nbsp;<span>U3D</span>&nbsp;&nbsp;&nbsp;<span>游戏策划</span>
-                        </li> 
-                        <li data-id="i">
-                                <span style="font-size: 20px"><b>物流</b></span>&nbsp;&nbsp;&nbsp;<span>小游戏开发</span>&nbsp;&nbsp;&nbsp;<span>U3D</span>&nbsp;&nbsp;&nbsp;<span>游戏策划</span>
+                        <li id = "a1"; data-id="a">
+                            <span style="font-size: 20px;"><b>技术</b></span><span>Java</span><span>PHP</span><span>C++</span><span>区域链</span>
                             </li>
-                            <li data-id="j">
-                                    <span style="font-size: 20px"><b>餐饮</b></span>&nbsp;&nbsp;&nbsp;<span>小游戏开发</span>&nbsp;&nbsp;&nbsp;<span>U3D</span>&nbsp;&nbsp;&nbsp;<span>游戏策划</span>
+                            <li data-id="b">
+                                <span style="font-size: 20px"><b>产品</b></span><span>产品总监</span><span>产品经理</span>
+                            </li>
+                            <li data-id="c">
+                                <span style="font-size: 20px"><b>设计</b></span><span>UI设计师</span><span>交互设计</span><span>网页设计师</span>
+                            </li>    <li data-id="d">
+                                <span style="font-size: 20px"><b>运营</b></span><span>新媒体运营</span><span>编辑</span><span>数据运营</span>
+                            </li> 
+                               <li data-id="e">
+                                <span style="font-size: 20px"><b>市场</b></span><span>市场营销</span><span>市场推广</span><span>市场策划</span>
+                            </li>   
+                             <li data-id="f">
+                                <span style="font-size: 20px"><b>销售</b></span><span>销售专员</span><span>销售经理</span><span>销售总监</span>
+                            </li> 
+                               <li data-id="g">
+                                <span style="font-size: 20px"><b>职能</b></span><span>HR</span><span>行政</span><span>财务</span><span>审计</span>
+                            </li>   
+                             <li data-id="h">
+                                <span style="font-size: 20px"><b>教育</b></span><span>小游戏开发</span><span>U3D</span><span>游戏策划</span>
+                            </li> 
+                            <li data-id="i">
+                                    <span style="font-size: 20px"><b>物流</b></span><span>小游戏开发</span><span>U3D</span><span>游戏策划</span>
                                 </li>
-                                <li data-id="k">
-                                        <span style="font-size: 20px"><b>服务</b></span>&nbsp;&nbsp;&nbsp;<span>小游戏开发</span>&nbsp;&nbsp;&nbsp;<span>U3D</span>&nbsp;&nbsp;&nbsp;<span>游戏策划</span>
-                                    </li>  
+                                <li data-id="j">
+                                        <span style="font-size: 20px"><b>餐饮</b></span><span>小游戏开发</span><span>U3D</span><span>游戏策划</span>
+                                    </li>
+                                    <li data-id="k">
+                                            <span style="font-size: 20px"><b>服务</b></span><span>小游戏开发</span><span>U3D</span><span>游戏策划</span>
+                                        </li>   
   
 
                     </ul>
@@ -641,7 +656,10 @@ setIframeHeight(document.getElementById('external-frame'));
         <iframe src="lunbotu.html" frameborder="0" width="1100px" height="620px"></iframe>
 </div>
 
-             
+<div>
+        <iframe id="frameContentLeft" src="ceshi.html"></iframe>
+         
+    </div>      
 </body>
 </html>
  

@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.remen{
+    width: 389px;
+    height:200px;
+    margin:16px 16px 0 0 ;
+    padding: 20px 18px 0;
+    border:1px solid #EAEEED;
+    color: grey;
+    display: inline-block;
+
+}
+.gongzi{
+    top: -20px;
+    left: 50%;
+    margin: auto;
+    font-size: 18px;
+     color:red;
+     display: inline-block;
+ position: relative;
+ }
+.pan{
+color:grey;
+font-size: 16px;
+
+}
+
+.remen1{
+width: 250px;
+
+display: inline-block;
+}
+.remen1 a{
+color: black;
+font-size: 16px;
+text-decoration: none;
+}
+.renmen2{
+top: 2px;
+font-size: 15px;
+display: inline-block;
+position: relative;
+}
+.tp{
+top: 5px;
+left: -25px;
+padding: 5px;
+width: 30px;
+height: 20px;
+margin:0px ;
+display: inline-block;
+position: relative;
+}
+.tp img{
+width: 22px;
+height: 22px;
+margin:0px ;
+}
+.biaoqian{
+top:33px;
+left: -50%;
+display: inline-block;
+width: 61px;
+height: 26px;
+padding: 0 5px;
+font-size: 12px;
+line-height: 26px;
+color: #999;
+border: 1px solid #F0F0F0;
+border-radius: 3px;
+text-align: center;
+position: relative;
+}
+
+#as{
+top: 22%;
+left: 0%;
+
+text-align: center;
+BORDER-TOP: #c3c5c5 1px dashed;
+OVERFLOW: hidden;
+HEIGHT: 1px;
+position: relative;
+}
+.tp2{
+top: 48px;
+left: -10px;
+padding: 5px;
+
+margin:0px ;
+display: inline-block;
+position: relative;
+}
+.tp2 img{
+width: 75x;
+height: 75px;
+margin:0px ;
+}
+.gongsi{
+
+display: inline-block;
+}
+.gongsi a{
+top: 23px;
+left: 0px;
+color: black;
+font-size: 16px;
+position: relative;
+display: block;
+text-decoration: none;
+}
+.pan2{
+top: 25px;
+left: 0px;
+display: block;
+position: relative;
+}
+.xiabufen{
+ 
+    display: inline-block;
+    position: absolute;
+}
+.kuangjia{
+float: left;
+list-style: none;
+}
