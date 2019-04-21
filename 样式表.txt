@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>                </title> 
+
+<script>
+
+
+
+</script>
+</head>
+ 
+<body>
+	
+ 
+	
+</body>
+</html>
+ 
+
+<link rel="stylesheet" type="text/css" href="/html/csstest1.css" >  此乃css外部导入样式表

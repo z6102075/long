@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>                </title> 
+
+<script>
+
+/*
+BOM
+ - 浏览器对象模型 
+ - BOM可以使我们通过JS来操作浏览器 
+ -在BOM中为我们提供了一组对象，用来完成对浏览器的操作 
+ - BOM对象 
+        Window 
+            -代表的是整个浏览器的窗口 ， 同时window也是网页中的全局对象 
+
+        Navigator
+            -代表的当前浏览器的信息 ，通过该对象可以来识别不同的浏览器
+
+
+        Location
+            -代表当前浏览器的地址栏信息 ，通过Location可以获取地址栏信息，或者
+            操作浏览器跳转页面 
+        History
+            -代表浏览器的历史记录，可以通过该对象，来操作浏览器的历史记录
+                由于隐私的原因，该对象不能获取到具体的历史记录，只能操作浏览器向前或者向后
+                而且该操作，只在当次访问时有效 
+
+        Screen
+            -代表用户的屏幕信息，通过该对象可以获取到用户的屏幕相关信息
+
+
+*/
+/*
+Navugator 
+    -代表的当前浏览器的信息 ，通过该对象可以来识别不同的浏览器 
+    -由于历史原因 ，Navigator对象中大部分属性都已经不能帮助我们识别浏览器了
+    -一般我们只会使用userAgent来判断浏览器的信息 
+    userAgent 是一个字符串，这个字符串中包含有用来描述浏览器信息的内容 
+    不同的浏览器会有不同的userAgent
+
+比如QQ浏览器 
+ Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2767.400
+
+*/
+//  alert(navigator.appName)
+
+
+var ua = navigator.userAgent;
+console.log(navigator.userAgent)
+
+if(/QQBrowser/i.test(ua)){
+    alert("你是QQ")
+}else if("ActiveXObject" in window){
+    alert("你是IE，我已经抓住你了");
+}else{
+    alert("你不是IE~~~")
+}
+/*
+如果通过UserAgent不能判断，还可以通过一些浏览器中特有的对象，来判断
+浏览器的信息 
+如果：ActiveXObject
+
+
+*/
+ 
+
+
+
+</script>
+</head>
+ 
+<body>
+	
+ 
+	
+</body>
+</html>
+ 

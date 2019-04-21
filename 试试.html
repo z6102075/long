@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>                </title> 
+
+<script type="text/javascript" src="tools.js"></script>
+<script>
+
+window.onload = function(){
+    var menuSpan = document.querySelectorAll(".menuSpan");
+            // alert(menuSpan.length)
+            for(var i=0;i<menuSpan.length;i++){
+                menuSpan[i].onclick = function(){
+                var parentDiv = this.parentNode;
+                    //  关闭parentDiv
+                addClass(parentDiv,"collapsed");
+                }
+            }
+            
+};
+
+
+</script>
+</head>
+ 
+<body>
+        <div>
+                <span class="menuSpan"> 技术 </span>
+                <a href="">java</a>
+                <a href="">PHP</a>
+                <a href="">C++</a>
+                <a href="">区域链</a>
+             
+                </div>
+                <div class="collapsed" > 
+                <span class="menuSpan"> 技术 </span>
+                        <a href="">java</a>
+                        <a href="">PHP</a>
+                        <a href="">C++</a>
+                        <a href="">区域链</a>
+                    </div>
+</body>
+</html>
+ 

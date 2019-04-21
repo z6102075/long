@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>                </title> 
+<style>
+.wrap{
+position: relative;
+width:300px;
+left: 50px;
+top:50px;
+
+
+}
+ul{
+    padding: 15px 0;
+    margin: 9;
+    list-style: none;
+    background: #6c6669;
+    color: #ffffff;
+    border-right-width: 0;
+
+}
+li {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    position: relative;
+
+}
+li.active{
+    background: #999395;
+
+}
+li span:hover{
+margin: 5px;
+    color:rgb(0,197,138);
+}
+.none{
+    display: none;
+}
+#sub{
+    width: 600px;
+    position: absolute;
+    border: 1px solid #f7f7f7;
+    background-color: #f7f7f7;
+    box-shadow: 2px 0 5px rgba(0,0,0,.3);
+    left: 300px;
+    top:0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px;
+}
+.sub_content a{
+    font-size: 12px;
+    color: #666;
+    text-decoration: none;
+}
+.sub_content dd a {
+    border-left: 1px solid #e0e0e0;
+    padding: 0 10px;
+    margin: 4px 0 ;
+}
+.sub_content dl{
+    overflow:hidden;
+}
+.sub_content dt {
+    float: left;
+    width: 70px;
+    font-weight: bold;
+    clear:left;
+    position: relative;
+}
+.sub_content dd{
+    float: left;
+    margin-left: 5px;
+    border-top:1px solid #eee;
+    margin-bottom: 5px;
+}
+.sub_content dt i{
+    width: 4px;
+    height: 14px;
+    font: 400 9p/14px consolas;
+    position:absolute;
+    right: 5px;
+    top:5px;
+}
+</style>
+<script>
+
+
+
+</script>
+</head>
+ 
+<body>
+<div class="wrap" id="test">
+<ul>
+    <li data-id="a">
+    <span>技术&nbsp;&nbsp;Java&nbsp;&nbsp;PHP&nbsp;&nbsp;C++&nbsp;&nbsp;区域链</span>
+    </li>
+    <li data-id="b">
+        <span>技术&nbsp;&nbsp;Java&nbsp;&nbsp;PHP&nbsp;&nbsp;C++&nbsp;&nbsp;区域链</span>
+    </li>
+    <li data-id="c">
+        <span>手机/运营商/数码</span>
+    </li>    <li data-id="d">
+        <span>电脑办公</span>
+    </li> 
+       <li data-id="e">
+        <span>家具/家居/家装/厨具</span>
+    </li>   
+     <li data-id="f">
+        <span>手机/运营商/数码</span>
+    </li> 
+       <li data-id="g">
+        <span>手机/运营商/数码</span>
+    </li>   
+     <li data-id="h">
+        <span>手机/运营商/数码</span>
+    </li>   
+     <li data-id="i">
+        <span>手机/运营商/数码</span>
+    </li>   
+     <li data-id="j">
+        <span>手机/运营商/数码</span>
+    </li>   
+     <li data-id="k">
+        <span>手机/运营商/数码</span>
+    </li>   
+     <li data-id="l">
+        <span>手机/运营商/数码</span>
+    </li>   
+     <li data-id="m">
+        <span>手机/运营商/数码</span>
+    </li>   
+     <li data-id="n">
+        <span>手机/运营商/数码</span>
+    </li> 
+       <li data-id="o">
+        <span>手机/运营商/数码</span>
+    </li> 
+       <li data-id="p">
+        <span>手机/运营商/数码</span>
+    </li>  
+      <li data-id="q">
+        <span>手机/运营商/数码</span>
+    </li>  
+      <li data-id="r">
+        <span>手机/运营商/数码</span>
+    </li>   
+     <li data-id="s">
+        <span>手机/运营商/数码</span>
+    </li>   
+     <li data-id="t">
+        <span>手机/运营商/数码</span>
+    </li>   
+     <li data-id="u">
+        <span>手机/运营商/数码</span>
+    </li>
+</ul>
+<div id="sub" class="none">
+    <div id="a" class="sub_content none">
+        <dl>
+            <dt>
+                <a href="#">电视<i>&gt;</i></a>
+            </dt>
+            <dd>
+                <a href="#"> 合资品牌</a>
+                <a href="#">国产品牌</a>
+                <a href="#">互联网品牌</a>
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <a href="#">电视<i>&gt;</i></a>
+            </dt>
+            <dd>
+                <a href="#"> 合资品牌</a>
+                <a href="#">国产品牌</a>
+                <a href="#">互联网品牌</a>
+            </dd>
+        </dl>
+        </div>
+        <div id="b" class="sub_content none">
+            <dl>
+                <dt>
+                    <a href="#">第二类<i>&gt;</i></a>
+                </dt>
+                <dd>
+                    <a href="#"> 第二类</a>
+                    <a href="#">第二类</a>
+                    <a href="#">第二类</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <a href="#">第二类<i>&gt;</i></a>
+                </dt>
+                <dd>
+                    <a href="#"> 第二类</a>
+                    <a href="#">第二类</a>
+                    <a href="#">第二类</a>
+                </dd>
+            </dl>
+            </div>
+    </div>
+</div>	
+ <script src="jquery-3.3.1.min.js"></script>
+ <script src="function.js"></script>
+ <script src="2.js"></script>
+	
+</body>
+</html>
+ 
