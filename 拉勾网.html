@@ -301,19 +301,115 @@ li span:hover{
 #frameContentLeft
         {
             position: absolute;
-            top: 90%;
+            top: 100%;
             left: 15%;
             height: 100%;
             width: 80%;
             overflow: hidden;
             vertical-align: top;
             border:none;
+            opacity:1; 
         }
+        #frameContentLeft.fadeout{
+-webkit-transition: all 0.5s;  
+-moz-transition: all 0.5s;  
+-ms-transition: all 0.5s;  
+-o-transition: all 0.5s;  
+transition: all 0.5s;  
+opacity: 0;
+}
+#frameContentLeft.fadein{
+-webkit-transition: all 3.5s;  
+-moz-transition: all 3.5s;  
+-ms-transition: all 3.5s;  
+-o-transition: all 3.5s;  
+transition: all 3.5s;  
+opacity: 1;
+}
+#btn01{
+    top: 95%;
+    left: 15%;
+    font-size: 20px;
+    color: #666;
+    text-decoration: none;
+    display: block;
+    position: absolute;
+}
+#btn02{
+    top: 95%;
+    left: 23%;
+    font-size: 20px;
+    color: #666;
+    text-decoration: none;
+    display: block;
+    position: absolute;
+}
+#frameContentLeft2
+        {
+            position: absolute;
+            top: 100%;
+            left: 15%;
+            height: 100%;
+            width: 80%;
+            overflow: hidden;
+            vertical-align: top;
+            border:none;
+             
+            opacity:0;
+        }
+        #frameContentLeft2.fadein{
+-webkit-transition: all 3.5s;  
+-moz-transition: all 3.5s;  
+-ms-transition: all 3.5s;  
+-o-transition: all 3.5s;  
+transition: all 3.5s;  
+opacity: 1;
+}
+#frameContentLeft2.fadeout{
+-webkit-transition: all 0.5s;  
+-moz-transition: all 0.5s;  
+-ms-transition: all 0.5s;  
+-o-transition: all 0.5s;  
+transition: all 0.5s;  
+opacity: 0;
+}
 </style>
  
 <script>
  
- 
+ window.onload= function(){
+    /*
+    点击按钮以后，修改box1的大小
+    
+    */
+//获取box1
+var box1  = document.getElementById("box1");
+//为按钮绑定单机响应函数 
+var btn01 = document.getElementById("btn01");
+var box2 = document.getElementById("box2");
+
+var btn02 = document .getElementById ("btn02");
+var frameContentLeft =document.getElementById("frameContentLeft");
+var frameContentLeft2 =document.getElementById("frameContentLeft2");
+
+btn02.onclick = function () {
+
+var frame = document.getElementById("frameContentLeft");
+var frame2 = document.getElementById("frameContentLeft2");
+frame.className = "frameContentLeft fadeout";
+frame2.className = "frameContentLeft2 fadein";
+}
+btn01.onclick = function () {
+
+var frame = document.getElementById("frameContentLeft");
+var frame2 = document.getElementById("frameContentLeft2");
+frame2.className = "frameContentLeft2 fadeout";
+frame.className = "frameContentLeft fadein";
+}        
+}
+
+
+
 </script>
  <script src="jquery-3.3.1.min.js"></script>
  <script src="function.js"></script>
@@ -656,10 +752,13 @@ li span:hover{
         <iframe src="lunbotu.html" frameborder="0" width="1100px" height="620px"></iframe>
 </div>
 
-<div>
+<div id="box1">
+        <a href="###" id ="btn01">24Hour热门</a>
+        <a href="###" id ="btn02">最新职位</a>
         <iframe id="frameContentLeft" src="ceshi.html"></iframe>
          
-    </div>      
+    </div>   
+    <div id = "box2"><iframe id="frameContentLeft2" src="ceshi2.html"></iframe></div>   
 </body>
 </html>
  
