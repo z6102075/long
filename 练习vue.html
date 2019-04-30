@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>                </title> 
+<style>
+
+.bg{
+    color:red;
+}
+</style>
+
+<script src="https://cdn.bootcss.com/vue/2.6.9/vue.min.js"></script>
+ 
+</head>
+ 
+<body>
+    <div id="app">
+<div class="bg" v-bind:id="bg1">
+        hello word!	
+        {{msg}}
+</div>
+
+<div  class="bg" >    <!--  如果同时出现两个bg，vue会优先绑定第一个，所以最好是绑定一个id,如果都想显示就用一个大的div块级元素加上id就可以-->
+    hello word!	
+    {{msg}}
+
+</div>
+{{count}}
+{{(count+1)*10}}
+<div v-html="template">
+</div>
+<a v-bind:href="url">百度</a>
+<a :href="url1">慕课</a>
+<button type="button"@click="submit()">加数字</button>
+</div>
+
+<script >
+new Vue({
+    el:'#app',
+    data:{
+    bg1:'app1-bind',
+    msg:'hello vue!!',
+    count:0,
+    url:'http://www.baidu.com',
+    url1:'http://imooc.com',
+    template:'<div>hello template</div>'
+    },
+    methods:{
+        submit:function(){
+            this.count ++
+        }
+    }
+})
+ </script>
+</body>
+</html>
+ <!-- 总结
+学习到了Vue文件结构
+插值语法{{msg}},数据，js表达式
+指令(指令缩写)@click,v-if,:href
+-->
